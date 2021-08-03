@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    /* background-image: url('/assets/image_3.jpg'); */
+    /* background-image: url('/assets/images_1.jpeg'); */
+    /* background-image: url('/assets/images_2.jpeg'); */
+    /* background-image: url('/assets/img1.jpg'); */
+    /* background-image: url('/assets/img2.jpg'); */
+    background-image: url('../images/img2.jpg');
+    /* background-image: url('/assets/img3.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.center-div{
+    padding-top: 10%;
+}
+
+.btn.btn-success{
+    padding: 0.5em 2em;
+    margin-top: 5%;
+    
+}
+
+form{
+    padding: 0 2em;     
+}
+
+form .form-group{
+    /* padding: 0 2em;  */
+    margin-top: 1em;    
+}
+
+/* form.form-group > small{
+    text-align: left;
+} */
+/* #login .pt-3.form-group > small{
+    font-size: 00.5em;
+} */
+
+#login .title > span{
+    font-size: .8em;
+}
+
+/* Return TO Homepage */
+.nav-brand{
+    font-size: 1.5em;
+    font-weight: bold;
+     
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-betweem{
+    justify-content: space-between;
+}
+
+
+.filter a{
+    margin-left: 5px;
+	color: #0c0000;
+}

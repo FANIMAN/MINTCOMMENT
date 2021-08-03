@@ -1,0 +1,103 @@
+
+	/* <style> */
+
+    /* Styling the Body element i.e. Color, Font, Alignment */
+    body {
+        /* background-color: #05c46b; */
+        background-image: url('../images/slide-3.jpg');
+        font-family: Verdana;
+        text-align: center;
+    }
+
+    .container{
+        max-width: 1024px;
+        margin: auto;
+    }
+    
+    .nav-brand{
+        font-size: 1.5em;
+        font-weight: bold;
+         
+    }
+    
+    .d-flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .justify-betweem{
+        justify-content: space-between;
+    }
+    
+   
+    
+    .filter a{
+        color: #f2f2f2;
+    }
+    #site-main{
+        margin-top: 3em;
+        font-family: 'Barlow', sans-serif;
+    
+    }
+
+/*   For THe Default Comment                     */
+
+     h1{
+        color: #f2f2f2; 
+    }
+
+    /* Styling the Form (Color, Padding, Shadow) */
+    form {
+        background-color: #fff;
+        max-width: 500px;
+        margin: 30px auto;
+        padding: 30px 20px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Styling form-control Class */
+    .form-control {
+        text-align: left;
+        margin-bottom: 25px;
+    }
+
+    /* Styling form-control Label */
+    .form-control label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /* Styling form-control input,
+    select, textarea */
+    .form-control input,
+    .form-control select,
+    .form-control textarea {
+        border: 1px solid #777;
+        border-radius: 2px;
+        font-family: inherit;
+        padding: 10px;
+        display: block;
+        width: 95%;
+    }
+
+    /* Styling form-control Radio
+    button and Checkbox */
+    .form-control input[type="radio"],
+    .form-control input[type="checkbox"] {
+        display: inline-block;
+        width: auto;
+    }
+
+    /* Styling Button */
+    button {
+        background-color: #58a07e;
+        border: 1px solid #777;
+        border-radius: 2px;
+        font-family: inherit;
+        font-size: 21px;
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+/* </style> */

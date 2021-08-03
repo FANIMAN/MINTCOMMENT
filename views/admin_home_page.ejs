@@ -1,0 +1,45 @@
+<!-- include header -->
+<%- include ('include/_header_a') %> 
+<!-- /include header -->
+
+
+<!-- Main Site -->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <a href="/logout-page" class="border-shadow">
+          <span class="text-gradient"><i class="fas fa-angle-double-left"></i>Logout</span>
+          </a>
+        </div>
+
+        <!-- form handling -->
+        <form action="/admin-page" method="POST">
+          <table class="table">
+              <thead class="thead-dark">
+                  <tr>
+                      <th>ID</th>
+                      <th>Ques1</th>
+                      <th>Ques2</th>
+                      <th>Ques3</th>
+                      <th>Ques4</th>
+                      <th>Comment</th>
+                      <!-- <th>Action</th> -->
+                  </tr>
+              </thead>
+              <tbody>
+                <%- include('include/_show') %>
+              </tbody>
+          </table>
+
+       </form>
+
+    </div>
+</main>
+
+<!-- /Main Site -->
+
+
+
+<!-- include footer -->
+<%- include('include/_footer_a') %> 
+<!-- i/nclude footer -->

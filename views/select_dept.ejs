@@ -1,0 +1,74 @@
+
+<!-- include header -->
+<%- include('include/_header_d') %>
+<!-- /include header -->
+
+
+<main id="site-main">
+<div class="container">
+	<div class="box-nav d-flex justify-between">
+		<div class="filter">
+			<a href="/"><i class="fas fa-angle-double-left"></i> Home Page</a>
+		</div>
+	</div>
+
+	<!-- <div class="form-title text-center">
+		<h2 class="text-dark">New User</h2>
+		<span class="text-light">Use the below form to create a new account</span>
+	</div> -->
+	<nav>
+		<ul>
+			<li><a href="#">Select Department<div id="down-triangle"></div></a>
+				<ul class="nbr">
+					<li id="dep1" id="navigation-item"><a href="/add-comment">Department One<div class="circle"></div></a></li>
+					<li id="dep1" id="navigation-item"><a href="/add-comment">Department Two<div class="circle"></div></a></li>
+					<li id="dep1" id="navigation-item"><a href="/add-comment">Department Three<div class="circle"></div></a></li>
+					<li id="dep1" id="navigation-item"><a href="/add-comment">Department Four<div class="circle"></div></a></li>
+					<li id="dep1" id="navigation-item"><a href="/add-comment">Department Five<div class="circle"></div></a></li>
+					<!-- <div id="dip6"><li><a href="/add-comment">Department Six<div class="circle"></div></a></li></div>
+					<div id="dip7"><li><a href="/add-comment">Department Seven<div class="circle"></div></a></li></div>
+					<div id="dip8"><li><a href="/add-comment">Department Eight<div class="circle"></div></a></li></div>
+					<div id="dip9"><li><a href="/add-comment">Department Nine<div class="circle"></div></a></li></div> -->
+				
+					<!-- <li id="nav1" class="navigation-item"><a href="#" >Nav 1</a></li>
+					<li id="nav2" class="navigation-item"><a href="#" >Nav 2</a></li>
+					<li id="nav3" class="navigation-item"><a href="#" >Nav 3</a></li>
+					<li id="nav4" class="navigation-item"><a href="#" >Nav 4</a></li> -->
+					
+					
+					
+				
+					<!-- <li><a href="/add-comment">Department Four<div class="circle"></div></a></li>
+					<li><a href="/add-comment">Department Five<div class="circle"></div></a></li>
+			<li><a href="/add-comment">Department One<div class="circle"></div></a></li>
+					<li><a href="/add-comment">Department Two<div class="circle"></div></a></li>
+					<li><a href="/add-comment">Department Three<div class="circle"></div></a></li>
+					<li><a href="/add-comment">Department Four<div class="circle"></div></a></li>
+					<li><a href="/add-comment">Department Five<div class="circle"></div></a></li> -->
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+	
+
+</div>
+</main>
+
+<!-- <script>
+	$(document).ready(function () {
+
+		$('.navigation-item').on('click', function (e) {
+        var currentID = $(this).attr("id");
+        console.log(currentID);
+        console.log(currentID+" = stored to localStorage");
+
+    });
+});
+</script> -->
+
+
+<!-- include footer -->
+
+<%- include('include/_footer') %>
+<!-- /include footer -->

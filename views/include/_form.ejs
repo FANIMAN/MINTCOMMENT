@@ -1,0 +1,224 @@
+   <!-- form handling -->
+   <!-- <form action="/api/users" method="POST" id="add_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="name" class="text-light"> Name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="name" placeholder="Fani Man">
+        </div>
+        <div class="form-group">
+          <label for="Email" class="text-light"> Email</label>
+          <input type="text" name="email" placeholder="faniman@gmail.com">
+      </div>
+      <div class="form-group">
+          <label for="gender" class="text-light">Gender</label>
+          <div class="radio inline">
+              <input type="radio" id="radio-2" name="gender" value="Male">
+              <label for="radio-2" class="radio-label">Male</label>
+          </div>
+          <div class="radio inline">
+              <input type="radio" id="radio-3" name="gender" value="Female">
+              <label for="radio-3" class="radio-label">Female</label>
+          </div>
+          
+      </div>
+
+      <div class="form-group">
+          <label for="status" class="text-light">Status</label>
+          <div class="radio inline">
+              <input type="radio" id="radio-4" name="status" value="Active">
+              <label for="radio-4" class="radio-label">Active</label>
+          </div>
+          <div class="radio inline">
+              <input type="radio" id="radio-5" name="status" value="Inactive">
+              <label for="radio-5" class="radio-label">Inactive</label>
+          </div> 
+      </div>
+
+      <div class="form-group">
+          <button type="submit" class="btn text-dark update">Save </button>
+      </div>
+    </div>
+ 
+</form> -->
+
+<form id="form" action="/api/comments" method="POST" >
+
+    <div class="form-control">
+        <label>
+            Hospitality?
+        </label>
+
+        <!-- Input Type Radio Button -->
+        <label for="recommed-1">
+            <input type="radio"
+                id="recommed-1"
+                value="Good"
+                name="question1">Good</input>
+        </label>
+        <label for="recommed-2">
+            <input type="radio"
+            value="FairlyGood"
+                id="recommed-2"
+                name="question1">Fairly Good</input>
+        </label>
+        <label for="recommed-3">
+            <input type="radio"
+            value="Bad"
+                id="recommed-3"
+                name="question1">Bad</input>
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label>
+            Timing?
+        </label>
+
+        <!-- Input Type Radio Button -->
+        <label for="recommed-4">
+            <input type="radio"
+                id="recommed-4"
+                value="Good"
+                name="question2">Good</input>
+        </label>
+        <label for="recommed-5">
+            <input type="radio"
+            value="FairlyGood"
+                id="recommed-5"
+                name="question2">Fairly Good</input>
+        </label>
+        <label for="recommed-6">
+            <input type="radio"
+            value="Bad"
+                id="recommed-6"
+                name="question2">Bad</input>
+        </label>
+    </div>
+
+
+    <div class="form-control">
+        <label>
+            Satisfaction?
+        </label>
+
+        <!-- Input Type Radio Button -->
+        <label for="recommed-7">
+            <input type="radio"
+                id="recommed-7"
+                value="Good"
+                name="question3">Good</input>
+        </label>
+        <label for="recommed-8">
+            <input type="radio"
+            value="FairlyGood"
+                id="recommed-8"
+                name="question3">Fairly Good</input>
+        </label>
+        <label for="recommed-9">
+            <input type="radio"
+            value="Bad"
+                id="recommed-9"
+                name="question3">Bad</input>
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label>
+            Handling?
+        </label>
+
+        <!-- Input Type Radio Button -->
+        <label for="recommed-10">
+            <input type="radio"
+                id="recommed-10"
+                value="Good"
+                name="question4">Good</input>
+        </label>
+        <label for="recommed-11">
+            <input type="radio"
+            value="FairlyGood"
+                id="recommed-11"
+                name="question4">Fairly Good</input>
+        </label>
+        <label for="recommed-12">
+            <input type="radio"
+            value="Bad"
+                id="recommed-12"
+                name="question4">Bad</input>
+        </label>
+    </div>
+
+
+<!-- 
+
+    <div class="form-control">
+        <label>
+            Are You Satisfied  to our Servicee?
+        </label>
+
+        <label for="recommed-4">
+            <input type="radio"
+                id="recommed-4"
+                name="recommedd">Yes</input>
+        </label>
+        <label for="recommed-5">
+            <input type="radio"
+                id="recommed-5"
+                name="recommedd">No</input>
+        </label>
+        <label for="recommed-6">
+            <input type="radio"
+                id="recommed-6"
+                name="recommedd">Maybe</input>
+        </label>
+    </div>
+
+    <div class="form-control">
+        <label>
+            Are You Satisfied  to our Service?
+        </label>
+
+        <label for="recommed-7">
+            <input type="radio"
+                id="recommed-7"
+                name="recommeddd">Yes</input>
+        </label>
+        <label for="recommed-8">
+            <input type="radio"
+                id="recommed-8"
+                name="recommeddd">No</input>
+        </label>
+        <label for="recommed-9">
+            <input type="radio"
+                id="recommed-9"
+                name="recommeddd">Maybe</input>
+        </label>
+    </div> -->
+
+
+
+    <div class="form-control">
+        <label for="comment">
+            Any comments or suggestions
+        </label>
+
+        <!-- multi-line text input control -->
+        <textarea name="comment" id="comment"
+            placeholder="Enter your comment here">
+        </textarea>
+    </div>
+
+    <!-- Multi-line Text Input Control -->
+    <!-- <a href="dropdown.html">
+        <button type="submit" value="submit">
+            Submit
+        </button>
+        </a> -->
+
+    <button type="submit" value="submit">
+        Submit
+    </button>
+   
+
+</form>

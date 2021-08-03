@@ -1,0 +1,148 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap');
+
+ :root{
+    --dark: #2b2d42;
+    --light: #adb5bd;
+    --border: #dee2e6;
+    --border-btn: #edf2f4;
+
+}
+
+body {
+	/* background: #f2f2f2; */
+  background-image: url('../images/slide-3.jpg');
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+	font-size: 1.25em;
+	font-family: 'Raleway', sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    margin: auto;
+}
+
+.nav-brand{
+    font-size: 1.5em;
+    font-weight: bold;
+     
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-betweem{
+    justify-content: space-between;
+}
+
+
+.filter a{
+	color: #f2f2f2;
+}
+#site-main{
+    margin-top: 8em;
+    font-family: 'Barlow', sans-serif;
+
+}
+
+
+/*   The Below Is For Nav               */
+nav {
+	/* margin: 100px auto;  */
+	text-align: center;
+}
+
+nav ul {
+	margin-left: 0;
+	padding-left: 0;
+	width: 500px;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+
+nav ul li {
+	float: left;
+	width: 500px;
+   height: 50px;
+	text-align: left;
+	/* border-bottom: 3px solid #2ecc71;  */
+  border-bottom: 3px solid #011110; 
+}
+	
+nav ul li:hover {
+	background: #f2f2f2;
+}
+
+nav ul li a {
+	display: block; 
+	padding: 15px 10px;
+	color: #f2f2f2; 
+	text-decoration: none;
+}
+					
+nav ul ul {
+	border-radius: 0px; 
+	padding: 0;
+	position: absolute; 
+	top: 100%;
+}
+
+nav ul ul li {
+	float: none;
+	border-bottom: 2px solid #eaeaea; 
+	position: relative;
+}
+
+nav ul ul li a {
+	padding: 15px 10px;
+	/* color: #838383; */
+  color: #eaeaea;
+}	
+
+nav ul li a:hover {
+	/* display: block; 
+	padding: 15px 10px;
+	color: #2a2a2a;  */
+	text-decoration: none;
+}
+	
+
+nav ul ul li a:hover {
+	background: #47d583;
+	color: #fff;
+}	
+
+#down-triangle {
+	float: right;
+	width: 0; 
+ 	height: 0;
+ 	margin-top: 10px;
+ 	/* border-top: 10px solid #2ecc71; */
+   border-top: 10px solid #01f8ec;
+  border-left: 10px solid transparent; 
+  border-right: 10px solid transparent; 
+}
+
+.circle {
+	float: right;
+	display: inline;
+	width: 10px;
+ 	height: 10px; 
+ 	margin-top: 5px;
+  border: 3px solid #8ce5b2;
+  -moz-border-radius: 100%; 
+  -webkit-border-radius: 100%; 
+  border-radius: 100%;
+}
