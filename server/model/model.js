@@ -3,6 +3,15 @@
 const mongoose = require("mongoose");
 
 var schema = new mongoose.Schema({   //This Is Very Simple mongodb model or Schema
+    
+    depname:{
+        type:String,
+        required:true
+    },
+    roomno:{
+        type:String,
+        required:true
+    },
     question1:{
         type: String,
         required: true

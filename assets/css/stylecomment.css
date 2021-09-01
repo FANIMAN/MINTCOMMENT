@@ -56,6 +56,25 @@
     }
 
     /* Styling form-control Class */
+    .control-form{
+        /* margin: 10x 25px; */
+        margin-bottom: 15px;
+    }
+    .control-formm{
+        margin-bottom: 25px;
+        /* margin: 10x 25px; */
+        /* margin-bottom: 25px; */
+    }
+    /* txtarea */
+    /* .control-formm textarea{
+        resize: none;
+        height: 15px;
+        width: 30px;
+        color: rgb(15, 3, 3);
+        
+    
+    } */
+
     .form-control {
         text-align: left;
         margin-bottom: 25px;

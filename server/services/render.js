@@ -1,9 +1,32 @@
 const axios = require('axios');  //helps us to make request 
 
-const credential = {
+// const credential = {
+//     email: "fani@gmail.com",
+//     password: "faniman"
+// }
+
+const credential = [
+{
     email: "fani@gmail.com",
     password: "faniman"
+},
+{
+    email: "beli@gmail.com",
+    password: "beliman"  
+},
+{
+    email: "eyob@gmail.com",
+    password: "eyobman"
+},
+{
+    email: "nati@gmail.com",
+    password: "natiman"  
+},
+{
+    email: "sol@gmail.com",
+    password: "soliman"  
 }
+]
 
 exports.homeRoutes = (req, res)=>{
     //make a get request to /api/users
@@ -33,26 +56,69 @@ exports.login_page = (req, res)=>{
     res.render('login')
 }
 
+exports.analysis_page = (req, res)=>{
+    res.render('analysis')
+}
+
 //var user;
-exports.admin_page = (req, res) =>{
+exports.admin_page = async (req, res) =>{   //async and await anatu itti dabable but Jijirama fida hin jiru
   //  axios.get('http://localhost:3000/api/comments')
-    if(req.body.email == credential.email && req.body.password == credential.password){
-        req.session.user = req.body.email
-        console.log(req.session)
-        console.log(req.session.user);
-        axios.get('http://localhost:3000/api/comments')
-        .then(function(response){ 
-            console.log(response.data);
-            res.render('admin_home_page', {comments: response.data});
-          //  console.log(comments);
+
+      //validate request
+      if(!req.body){
+        res.status(406).json({err:"You Have to fill The Login Form"});
+        return;
+    } 
+
+    //get user data
+     let {email, password} = req.body
+
+        if(!email || !password ){
+            res.status(406).json({err:"Not All fields are Entered...Please Fill The Form"});
+
+        }
+
+        await credential.forEach(element =>{
+        if(req.body.email == element.email && req.body.password == element.password){
+            req.session.user = req.body.email
+            console.log(req.session)
+            console.log(req.session.user);
+            axios.get('http://localhost:3000/api/comments')
+            .then(function(response){ 
+                console.log(response.data);
+                res.render('admin_home_page', {comments: response.data});
+              //  console.log(comments);
+        
+            })
+            .catch(err=>{
+                res.send(err);
+            })
+        }
+        // else{
+        //     res.end("Invalid Username/Password");
+        // }
+        });
+
+
+        //Kun Emmo Esa Duradha
+    // if(req.body.email == credential.email && req.body.password == credential.password){
+    //     req.session.user = req.body.email
+    //     console.log(req.session)
+    //     console.log(req.session.user);
+    //     axios.get('http://localhost:3000/api/comments')
+    //     .then(function(response){ 
+    //         console.log(response.data);
+    //         res.render('admin_home_page', {comments: response.data});
+    //       //  console.log(comments);
     
-        })
-        .catch(err=>{
-            res.send(err);
-        })
-    }else{
-        res.end("Invalid Username");
-    }
+    //     })
+    //     .catch(err=>{
+    //         res.send(err);
+    //     })
+    // }
+    // // else{
+    // //     res.end("Invalid Username/Password");
+    // // }
 
 
    // res.render('admin_page')

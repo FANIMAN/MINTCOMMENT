@@ -1,3 +1,4 @@
+const { on } = require('../model/model');
 var Commentdb = require('../model/model');
 // var selecteddep = require('../model/index2');
 // nameOfDep:selecteddep.currentID,
@@ -6,26 +7,38 @@ var Commentdb = require('../model/model');
 // var selecteddep = require('/js/index');
 
 
+// function
+
 //create and save new comment
 exports.create = (req, res)=>{
+
     //validate request
     if(!req.body){
         res.status(400).send({message: "Content Can not be empty"});
         return;
     }
+
+    //get user data
+     let {dep, roomno, question1, question2, question3, question4, comment} = req.body
+     
+     if(!dep || !roomno || !question1 || !question2 || !question3 || !question4 || !comment){
+         res.status(406).json({err:"Not All fields are Entered. Please Fill All Fields"});
+     }
     
-    //new comment
-    const comment = new Commentdb({
-        question1: req.body.question1,
-        question2:req.body.question2,
-        question3:req.body.question3,
-        question4:req.body.question4,
-        comment:req.body.comment
-    })
+   //new comment
+    const newComment = new Commentdb({
+      depname: req.body.dep,
+      roomno: req.body.roomno,
+      question1: req.body.question1,
+      question2: req.body.question2,
+      question3: req.body.question3,
+      question4: req.body.question4,
+      comment: req.body.comment,
+    });
 
     //save comment in database
-    comment
-      .save(comment)
+    newComment
+      .save(newComment)
       .then(data=>{
           //res.send(data)
           res.redirect('/')
@@ -96,13 +109,18 @@ exports.update = (req, res)=>{
     })
 }
 
+/**
+
+ */
+
+
 //Delete a comment with specified  comment id in the request
 exports.delete = (req, res)=>{
     const id = req.params.id;   //Used For URL Parameter not Query Parameter
     Commentdb.findByIdAndDelete(id)
     .then(data=>{
         if (!data) {
-            res.status(404).send({message: `Can not dekete comment with id  ${id}, May be id is wrong`});
+            res.status(404).send({message: `Can not delete comment with id  ${id}, May be id is wrong`});
         } else {
             res.send({message: "comment was succesfully Deleted"});
         }
@@ -113,3 +131,6 @@ exports.delete = (req, res)=>{
     });
     
 }
+
+
+

@@ -18,13 +18,20 @@
 	</div> -->
 	<nav>
 		<ul>
-			<li><a href="#">Select Department<div id="down-triangle"></div></a>
+			<li><a href="#">SELECT ROOM NUMBER :<div id="down-triangle"></div></a>
 				<ul class="nbr">
-					<li id="dep1" id="navigation-item"><a href="/add-comment">Department One<div class="circle"></div></a></li>
-					<li id="dep1" id="navigation-item"><a href="/add-comment">Department Two<div class="circle"></div></a></li>
-					<li id="dep1" id="navigation-item"><a href="/add-comment">Department Three<div class="circle"></div></a></li>
-					<li id="dep1" id="navigation-item"><a href="/add-comment">Department Four<div class="circle"></div></a></li>
-					<li id="dep1" id="navigation-item"><a href="/add-comment">Department Five<div class="circle"></div></a></li>
+					<li id="navigation-item" onclick="passValuefffr(this)" value="101"><a href="/add-comment" id="fr101" onclick="">FIRST FLOOR ROOM NUMBER 101<div class="circle"></div></a></li>
+					<li id="navigation-item" onclick="passValueffsr(this)" value="102"><a href="/add-comment" id="fr102" onclick="passValuefs()">FIRST FLOOR ROOM NUMBER 102<div class="circle"></div></a></li>
+					<li id="navigation-item" onclick="passValuesffr(this)" value="201"><a href="/add-comment" id="se201" onclick="passValuesf()">SECOND FLOOR ROOM NUMBER 201<div class="circle"></div></a></li>
+					<li id="navigation-item" onclick="passValuesfsr(this)" value="202"><a href="/add-comment" id="se202" onclick="passValuess()">SECOND FLOOR ROOM NUMBER 202<div class="circle"></div></a></li>
+					<li id="navigation-item" onclick="passValuetffr(this)" value="301"><a href="/add-comment" id="th301" onclick="passValuetf()">THIRD FLOOR ROOM NUMBER 301<div class="circle"></div></a></li>
+					<li id="navigation-item" onclick="passValuetfsr(this)" value="302"><a href="/add-comment" id="th302" onclick="passValuets()">THIRD FLOOR ROOM NUMBER 302<div class="circle"></div></a></li>
+					<li id="navigation-item" onclick="passValuefthffr(this)" value="401"><a href="/add-comment" id="se201" onclick="passValuesf()">FORTH FLOOR ROOM NUMBER 401<div class="circle"></div></a></li>
+					<li id="navigation-item" onclick="passValuefthfsr(this)" value="402"><a href="/add-comment" id="se202" onclick="passValuess()">FORTH FLOOR ROOM NUMBER 402<div class="circle"></div></a></li>
+					<li id="navigation-item" onclick="passValuefifthffr(this)" value="501"><a href="/add-comment" id="th301" onclick="passValuetf()">FIFTH FLOOR ROOM NUMBER 501<div class="circle"></div></a></li>
+					<li id="navigation-item" onclick="passValuefifthfsr(this)" value="502"><a href="/add-comment" id="th302" onclick="passValuets()">FIFTH FLOOR ROOM NUMBER 502<div class="circle"></div></a></li>
+
+
 					<!-- <div id="dip6"><li><a href="/add-comment">Department Six<div class="circle"></div></a></li></div>
 					<div id="dip7"><li><a href="/add-comment">Department Seven<div class="circle"></div></a></li></div>
 					<div id="dip8"><li><a href="/add-comment">Department Eight<div class="circle"></div></a></li></div>
@@ -70,5 +77,5 @@
 
 <!-- include footer -->
 
-<%- include('include/_footer') %>
+<%- include('include/_footer_d') %>
 <!-- /include footer -->

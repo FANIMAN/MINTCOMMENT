@@ -24,6 +24,7 @@ route.get('/add-comment', services.add_comment);
  * @method GET /update-user
  */
 route.get('/select-dept', services.select_dept);
+ 
 
 
 route.get('/login-page', services.login_page);
@@ -31,6 +32,9 @@ route.get('/login-page', services.login_page);
 route.get('/logout-page', services.logout_page);
 
 route.post('/admin-page', services.admin_page);
+
+//anaysis-page using get Method
+route.get('/analysis-page', services.analysis_page);
 
 
 

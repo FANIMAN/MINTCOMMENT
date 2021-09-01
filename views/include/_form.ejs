@@ -44,27 +44,87 @@
 
 <form id="form" action="/api/comments" method="POST" >
 
+    <!-- <div class="control-form">
+        <label for="dep"><b> Choose Room No: </b></label>
+        <select name="dep" id="dep">
+        <optgroup label= "First Floor">
+            <option value="101">Room 101</option>
+            <option value="102">Room 102</option>
+        </optgroup>
+        <optgroup label="Second Floor">
+            <option value="201">Room 201 </option>
+            <option value="202">Room 202 </option>
+        </optgroup> 
+        <optgroup label="Third Floor">
+            <option value="301">Room 301</option>
+            <option value="302">Room 302</option>      
+        </optgroup>
+        </select>
+    </div> 
+
+    <div class="control-form">
+        <label for="dep"><b> Choose Room No: </b></label>
+        <select name="dep" id="dep">
+        <optgroup label= "First Floor">
+            <option value="101">Room 101</option>
+            <option value="102">Room 102</option>
+        </optgroup>
+        <optgroup label="Second Floor">
+            <option value="201">Room 201 </option>
+            <option value="202">Room 202 </option>
+        </optgroup> 
+        <optgroup label="Third Floor">
+            <option value="301">Room 301</option>
+            <option value="302">Room 302</option>      
+        </optgroup>
+        </select>
+    </div>  -->
+
+    <div class="control-formm">
+        <label for="dep"><b>Selected Room Number Is:</b></label>
+        <!-- <label id="dep"></label> -->
+        <textarea name="dep" id="dep" style="resize: none; height: 15px; width: 30px; color: black;" readonly></textarea>
+        <!-- <input type="number" id="dep" name="dep" min="1" max="10000"> -->
+    </div>
+
+    <!-- <div class="control-form">
+        <label for="roomno"><b>Enter Desk No:</b></label>
+        <input type="number" id="roomno" name="roomno" min="1" max="10000">
+    </di> -->
+
+    
+    <div class="control-form">
+        <label for="roomno"><b> Choose Desk No: </b></label>
+        <select name="roomno" id="roomno">
+            <option value="1">Desk No 1</option>
+            <option value="2">Desk No 2</option>
+            <option value="3">Desk No 3</option>
+            <option value="4">Desk No 4</option>
+            <option value="5">Desk No 5</option>
+        </select>
+    </div> 
+
     <div class="form-control">
         <label>
-            Hospitality?
+            <b>Hospitality?</b>
         </label>
 
         <!-- Input Type Radio Button -->
         <label for="recommed-1">
             <input type="radio"
                 id="recommed-1"
-                value="Good"
+                value="3"
                 name="question1">Good</input>
         </label>
         <label for="recommed-2">
             <input type="radio"
-            value="FairlyGood"
+            value="2"
                 id="recommed-2"
                 name="question1">Fairly Good</input>
         </label>
         <label for="recommed-3">
             <input type="radio"
-            value="Bad"
+            value="1"
                 id="recommed-3"
                 name="question1">Bad</input>
         </label>
@@ -72,25 +132,25 @@
 
     <div class="form-control">
         <label>
-            Timing?
+            <b>Timing?</b>
         </label>
 
         <!-- Input Type Radio Button -->
         <label for="recommed-4">
             <input type="radio"
                 id="recommed-4"
-                value="Good"
+                value="3"
                 name="question2">Good</input>
         </label>
         <label for="recommed-5">
             <input type="radio"
-            value="FairlyGood"
+            value="2"
                 id="recommed-5"
                 name="question2">Fairly Good</input>
         </label>
         <label for="recommed-6">
             <input type="radio"
-            value="Bad"
+            value="1"
                 id="recommed-6"
                 name="question2">Bad</input>
         </label>
@@ -99,25 +159,25 @@
 
     <div class="form-control">
         <label>
-            Satisfaction?
+            <b>Satisfaction?</b>
         </label>
 
         <!-- Input Type Radio Button -->
         <label for="recommed-7">
             <input type="radio"
                 id="recommed-7"
-                value="Good"
+                value="3"
                 name="question3">Good</input>
         </label>
         <label for="recommed-8">
             <input type="radio"
-            value="FairlyGood"
+            value="2"
                 id="recommed-8"
                 name="question3">Fairly Good</input>
         </label>
         <label for="recommed-9">
             <input type="radio"
-            value="Bad"
+            value="1"
                 id="recommed-9"
                 name="question3">Bad</input>
         </label>
@@ -125,25 +185,25 @@
 
     <div class="form-control">
         <label>
-            Handling?
+            <b>Handling?</b>
         </label>
 
         <!-- Input Type Radio Button -->
         <label for="recommed-10">
             <input type="radio"
                 id="recommed-10"
-                value="Good"
+                value="3"
                 name="question4">Good</input>
         </label>
         <label for="recommed-11">
             <input type="radio"
-            value="FairlyGood"
+            value="2"
                 id="recommed-11"
                 name="question4">Fairly Good</input>
         </label>
         <label for="recommed-12">
             <input type="radio"
-            value="Bad"
+            value="1"
                 id="recommed-12"
                 name="question4">Bad</input>
         </label>
@@ -200,13 +260,18 @@
 
     <div class="form-control">
         <label for="comment">
-            Any comments or suggestions
+            <b>Any comments or suggestions</b>
         </label>
 
         <!-- multi-line text input control -->
         <textarea name="comment" id="comment"
             placeholder="Enter your comment here">
         </textarea>
+    </div>
+
+    <div>
+        <span id="error"></span>
+
     </div>
 
     <!-- Multi-line Text Input Control -->
@@ -216,6 +281,7 @@
         </button>
         </a> -->
 
+        <!-- onclick="checkCorrectness()" -->
     <button type="submit" value="submit">
         Submit
     </button>
