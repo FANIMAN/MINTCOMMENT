@@ -83,8 +83,8 @@ exports.admin_page = async (req, res) =>{   //async and await anatu itti dabable
             req.session.user = req.body.email
             console.log(req.session)
             console.log(req.session.user);
-            // axios.get('http://localhost:3000/api/comments')
-            axios.get('/api/comments')
+            axios.get('http://localhost:3000/api/comments')
+            // axios.get('/api/comments')
             .then(function(response){ 
                 console.log(response.data);
                 res.render('admin_home_page', {comments: response.data});
