@@ -36,6 +36,6 @@ var schema = new mongoose.Schema({   //This Is Very Simple mongodb model or Sche
 
 })
 
-const Commentdb = mongoose.model('commentdb', schema);          //userdb is document namidha wanta barbadne galchu ni dandenya.
+const Commentdb = mongoose.model('commentdb', schema);          //commentdb is document name (We Can Enter any String).
 
 module.exports = Commentdb;

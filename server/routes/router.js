@@ -14,14 +14,14 @@ const controller = require('../controller/controller');
 route.get('/', services.homeRoutes);
 
 /**
- * @description add users
- * @method GET /add-user
+ * @description add comments
+ * @method GET /add-comment
  */
 route.get('/add-comment', services.add_comment);
 
 /**
- * @description for update users
- * @method GET /update-user
+ * @description for select dept users
+ * @method GET /select-dept
  */
 route.get('/select-dept', services.select_dept);
  

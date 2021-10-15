@@ -45,8 +45,10 @@ app.use('/fonts',express.static(path.resolve(__dirname,"assets/fonts")))
 app.use('/', require('./server/routes/router'));
 
 
-
 app.listen(PORT, ()=>{
     console.log("The Server Is Listening On Port", PORT);
 })
+
+
+
 
