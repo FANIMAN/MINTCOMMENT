@@ -43,7 +43,7 @@ route.get('/analysis-page', services.analysis_page);
 route.post('/api/comments', controller.create);
 route.get('/api/comments', controller.find);
 // route.put('/api/comments/:id', controller.update);
-route.delete('/api/comments/:id', controller.delete);
+route.delete('/api/comments/:id', controller.delete); 
 
 
 module.exports = route;

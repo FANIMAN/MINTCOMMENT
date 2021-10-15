@@ -17,9 +17,10 @@ $("#update_user").submit(function(event){
 
 
     console.log(data);
-
+    
+     //        "url": `http://localhost:3000/api/users/${data.id}`,     //Kana ture dura
     var request= {
-        "url": `http://localhost:3000/api/users/${data.id}`,
+        "url": `http://fierce-shore-20470.herokuapp.com/api/users/${data.id}`,
         "method": "PUT",
         "data":data
     }
@@ -33,9 +34,10 @@ if(window.location.pathname == "/admin-page"){
     $ondelete = $(".table tbody td a.delete");
     $ondelete.click(function(){
         var id = $(this).attr("data-id")
-
+        
+        //"url" : `http://localhost:3000/api/comments/${id}`,   //Kana ture Dura
         var request = {
-            "url" : `http://localhost:3000/api/comments/${id}`,
+            "url" : `http://fierce-shore-20470.herokuapp.com/api/comments/${id}`,
             "method" : "DELETE"
         }
 
