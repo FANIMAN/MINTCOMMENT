@@ -83,7 +83,8 @@ exports.admin_page = async (req, res) =>{   //async and await anatu itti dabable
             req.session.user = req.body.email
             console.log(req.session)
             console.log(req.session.user);
-            axios.get('http://localhost:3000/api/comments')
+            axios.get('http://fierce-shore-20470.herokuapp.com/api/comments')
+            // axios.get('http://localhost:3000/api/comments')
             // axios.get('/api/comments')
             .then(function(response){ 
                 console.log(response.data);
