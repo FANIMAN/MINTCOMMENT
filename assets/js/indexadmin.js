@@ -37,7 +37,8 @@ if(window.location.pathname == "/admin-page"){
         
         //"url" : `http://localhost:3000/api/comments/${id}`,   //Kana ture Dura
         var request = {
-            "url" : `http://suggestion-box-mint.herokuapp.com/api/comments/${id}`,
+            // "url" : `http://suggestion-box-mint.herokuapp.com/api/comments/${id}`,
+            "url" : `http://localhost:3000/api/comments/${id}/`,
             "method" : "DELETE"
         }
 
