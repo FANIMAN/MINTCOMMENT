@@ -20,7 +20,7 @@ $("#update_user").submit(function(event){
     
      //        "url": `http://localhost:3000/api/users/${data.id}`,     //Kana ture dura
     var request= {
-        "url": `http://fierce-shore-20470.herokuapp.com/api/users/${data.id}`,
+        "url": `http://suggestion-box-mint.herokuapp.com/api/users/${data.id}`,
         "method": "PUT",
         "data":data
     }
@@ -37,7 +37,7 @@ if(window.location.pathname == "/admin-page"){
         
         //"url" : `http://localhost:3000/api/comments/${id}`,   //Kana ture Dura
         var request = {
-            "url" : `http://fierce-shore-20470.herokuapp.com/api/comments/${id}`,
+            "url" : `http://suggestion-box-mint.herokuapp.com/api/comments/${id}`,
             "method" : "DELETE"
         }
 
